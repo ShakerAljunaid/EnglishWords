@@ -1,0 +1,15 @@
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\bin\Debug\English word.exe.config
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\bin\Debug\English word.exe
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\bin\Debug\English word.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English word.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English word.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English word.exe
+c:\users\administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English word.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\English word\English word\obj\Debug\English_word.New_word.resources
+C:\Users\Administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.Picture_viewer.resources
+C:\Users\Administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.New_Grammar.resources
+C:\Users\Administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.New_note.resources
+C:\Users\Administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.New_idiom.resources
+C:\Users\Administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.frmMainPage.resources
+C:\Users\Administrator\documents\visual studio 2013\Projects\English word\English word\obj\Debug\English_word.Help.resources

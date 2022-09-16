@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{574C8A7A-F5FD-41BA-BD04-AA3A48DD064D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>English_word</RootNamespace>
+    <AssemblyName>English word</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Untitled-24.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Add_Gram.cs" />
+    <Compile Include="Classes\Add_idiom.cs" />
+    <Compile Include="Classes\Add_Notes.cs" />
+    <Compile Include="Classes\Add_word.cs" />
+    <Compile Include="Classes\DB_connection.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New word.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New word.Designer.cs">
+      <DependentUpon>New word.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Grammar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Grammar.Designer.cs">
+      <DependentUpon>New_Grammar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_idiom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_idiom.Designer.cs">
+      <DependentUpon>New_idiom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_note.Designer.cs">
+      <DependentUpon>New_note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Picture viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Picture viewer.Designer.cs">
+      <DependentUpon>Picture viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New word.resx">
+      <DependentUpon>New word.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Grammar.resx">
+      <DependentUpon>New_Grammar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_idiom.resx">
+      <DependentUpon>New_idiom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_note.resx">
+      <DependentUpon>New_note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picture viewer.resx">
+      <DependentUpon>Picture viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-438.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arabic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\English.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-631.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitlted-16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untit44led-8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pic2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Container.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Container.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Separator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0001.jpg" />
+    <Content Include="Untitled-24.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
